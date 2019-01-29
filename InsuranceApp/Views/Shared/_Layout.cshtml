@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Insurance</title>
+    @Styles.Render("~/Content/css")
+
+
+</head>
+<body>
+    
+         @RenderBody()
+         @Scripts.Render("~/bundles/jquery")
+         @Scripts.Render("~bundles/bootstrap")
+         @RenderSection("scripts", required: false)
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+            <a style="font-family: 'Akronim';font-size: 37px; color:#FFFF66" class="navbar-brand" href="/"><i>Since 1996</i></a>
+
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto">
+
+                    <li style="padding-left:36px;  font-family: 'Carter One'; padding-right:24px;"class="nav-item"><a style="color:#FF6600; font-size:25px;" href="/" class="nav-link">Home</a></li>
+                    <li style="padding-left:36px;  font-family: 'Carter One'; padding-right:24px;" class="nav-item"><a style="color:#FF6600; font-size:25px;" href="/Admin" class="nav-link">Admin Page</a></li>
+                    <li style="padding-left:36px;  font-family: 'Carter One'; padding-right:24px;" class="nav-item"><a style="color:#FF6600; font-size:25px;"href="/Home/Index" class="nav-link"> Get your Quote!</a></li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
